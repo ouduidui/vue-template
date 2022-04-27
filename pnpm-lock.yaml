@@ -13,7 +13,7 @@ specifiers:
   eslint-plugin-cypress: ^2.12.1
   jsdom: ^19.0.0
   pinia: ^2.0.13
-  pinia-persists: ^1.1.0
+  pinia-persists: ^1.2.0
   pnpm: ^6.32.11
   typescript: ^4.6.3
   unocss: ^0.31.17
@@ -29,7 +29,7 @@ specifiers:
 dependencies:
   '@vueuse/core': 8.3.1_vue@3.2.33
   pinia: 2.0.13_typescript@4.6.3+vue@3.2.33
-  pinia-persists: 1.1.0
+  pinia-persists: 1.2.0
   vue: 3.2.33
   vue-router: 4.0.14_vue@3.2.33
 
@@ -3437,8 +3437,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /pinia-persists/1.1.0:
-    resolution: {integrity: sha512-zeHqQ7rGQywlSWHqOnGy/l5LLQuAj2MwI3wdP8ME2Muq/TFIi3lxekL9qhaCKE2CXpqjyGQcvY135EpGHFK2uw==}
+  /pinia-persists/1.2.0:
+    resolution: {integrity: sha512-aFqGUky6LMNAfBQAkiLGZR5NdOiGuZX1ZLoCqcvHLA+N7bO7EEU5Ir1zAvsIalb45shWn+JFMwwkOxJNCphclA==}
     dependencies:
       vue: 3.2.33
     dev: false

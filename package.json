@@ -22,7 +22,7 @@
   "dependencies": {
     "@vueuse/core": "^8.3.1",
     "pinia": "^2.0.13",
-    "pinia-persists": "^1.1.0",
+    "pinia-persists": "^1.2.0",
     "vue": "^3.2.33",
     "vue-router": "^4.0.14"
   },
