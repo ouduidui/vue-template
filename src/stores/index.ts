@@ -8,7 +8,10 @@ export interface TodoType {
 export const todosStore = defineStore('todos', {
   state: () => {
     return {
-      todos: [] as TodoType[],
+      todos: [{
+        id: 1,
+        content: 'Learn Vue',
+      }] as TodoType[],
       doneTodos: [] as TodoType[],
     }
   },
@@ -29,6 +32,13 @@ export const todosStore = defineStore('todos', {
         otherTodos.sort((a, b) => a.id - b.id)
         todos.splice(idx, 1)
       }
+    },
+
+    deleteTodo(id: number, doneOrUndone: boolean) {
+      if (doneOrUndone)
+        this.doneTodos = this.doneTodos.filter(todo => todo.id !== id)
+      else
+        this.todos = this.todos.filter(todo => todo.id !== id)
     },
   },
 })

@@ -9,6 +9,10 @@ const props = defineProps<{
 const store = todosStore()
 const doneHandle = () => store.todoDone(props.todo.id, !props.done)
 
+const router = useRouter()
+
+const toDetail = () => router.push(`/detail/${props.todo.id}`)
+
 </script>
 
 <template>
@@ -22,6 +26,7 @@ const doneHandle = () => store.todoDone(props.todo.id, !props.done)
     items-center
     hover:shadow-sm
     :class="props.done ? 'opacity-50' : ''"
+    @click="toDetail"
   >
     <div
       cursor-pointer
