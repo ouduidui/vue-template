@@ -3,7 +3,7 @@ import { todosStore } from '~/stores/index'
 
 const store = todosStore()
 const { todos, doneTodos } = storeToRefs(store)
-const doneHandle = (id:number, done:boolean) => store.todoDone(id, done)
+const doneHandle = (id: number, done: boolean) => store.todoDone(id, done)
 
 const inputContent = ref('')
 
@@ -47,14 +47,14 @@ const addTodoHandle = () => {
         v-for="todo in todos"
         :key="todo.id"
         :todo="todo"
-        @doneHandle="doneHandle"
+        @done-handle="doneHandle"
       />
       <todo-item
         v-for="todo in doneTodos"
         :key="todo.id"
         done
         :todo="todo"
-        @doneHandle="doneHandle"
+        @done-handle="doneHandle"
       />
     </div>
   </main>
