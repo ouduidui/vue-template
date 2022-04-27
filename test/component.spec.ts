@@ -1,22 +1,14 @@
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import HelloWorld from '../src/components/HelloWorld.vue'
+import TodoItem from '../src/components/TodoItem.vue'
 
-describe('HelloWorld.vue', () => {
+describe('TodoItem.vue', () => {
   it('should render', () => {
-    const wrapper = mount(HelloWorld, { props: { initial: 10 } })
-    expect(wrapper.text()).toContain('10')
+    const wrapper = mount(TodoItem, { props: { todo: {
+      id: 1,
+      content: 'Test Todo'
+    } } })
+    expect(wrapper.text()).toContain('Test Todo')
     expect(wrapper.html()).toMatchSnapshot()
-  })
-
-  it('should be interactive', async() => {
-    const wrapper = mount(HelloWorld, { props: { initial: 0 } })
-    expect(wrapper.text()).toContain('0')
-
-    expect(wrapper.find('.inc').exists()).toBe(true)
-
-    await wrapper.get('button').trigger('click')
-
-    expect(wrapper.text()).toContain('1')
   })
 })

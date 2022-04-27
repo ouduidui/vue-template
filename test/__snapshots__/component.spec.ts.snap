@@ -1,7 +1,15 @@
 // Vitest Snapshot v1
 
 exports[`HelloWorld.vue > should render 1`] = `
-"<div>
-  <p text=\\"\\" op75=\\"\\"> Count: 10</p><button m-3=\\"\\" text-sm=\\"\\" btn=\\"\\" bg-blue=\\"\\" class=\\"inc\\"> Add </button>
+"<div mb-3=\\"\\" p=\\"x-4 y-2\\" w-300px=\\"\\" border=\\"~ gray-700 dark:gray-200\\" bg-transparent=\\"\\" flex=\\"\\" items-center=\\"\\" hover:shadow-sm=\\"\\" class=\\"\\">
+  <div cursor-pointer=\\"\\" mr-3=\\"\\" class=\\"i-carbon-checkbox\\"></div>
+  <div>Test Todo</div>
+</div>"
+`;
+
+exports[`TodoItem.vue > should render 1`] = `
+"<div mb-3=\\"\\" p=\\"x-4 y-2\\" w-300px=\\"\\" border=\\"~ gray-700 dark:gray-200\\" bg-transparent=\\"\\" flex=\\"\\" items-center=\\"\\" hover:shadow-sm=\\"\\" class=\\"\\">
+  <div cursor-pointer=\\"\\" mr-3=\\"\\" class=\\"i-carbon-checkbox\\"></div>
+  <div>Test Todo</div>
 </div>"
 `;

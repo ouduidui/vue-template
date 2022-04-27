@@ -12,7 +12,7 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite",
-    "test:unit": "vitest",
+    "test": "vitest",
     "test:e2e": "cypress open",
     "format": "eslint \"**/*.{vue,ts,js}\" --fix",
     "lint": "eslint \"**/*.{vue,ts,js}\"",
